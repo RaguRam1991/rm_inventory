@@ -7,9 +7,9 @@ import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
   { label: "Dashboard", href: "/", icon: LayoutDashboard },
-  { label: "POS Terminal", href: "/pos", icon: ShoppingCart },
-  { label: "Inventory", href: "/inventory", icon: Package },
-  { label: "History", href: "/history", icon: History },
+  { label: "Billing", href: "/pos", icon: ShoppingCart },
+  { label: "Products", href: "/inventory", icon: Package },
+  { label: "Transactions", href: "/history", icon: History },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -21,7 +21,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <div className="p-6 border-b border-primary-foreground/10">
         <h1 className="text-2xl font-bold font-display tracking-tight text-white flex items-center gap-2">
           <span className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-primary">H</span>
-          Hotel POS
+          R M Tiffen Store
         </h1>
       </div>
       
