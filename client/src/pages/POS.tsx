@@ -108,7 +108,7 @@ export default function POS() {
                   </span>
                 </div>
                 <h3 className="font-semibold text-foreground line-clamp-1 group-hover:text-primary transition-colors">{item.name}</h3>
-                <p className="text-lg font-bold text-primary mt-1">${item.price}</p>
+                <p className="text-lg font-bold text-primary mt-1">{item.price}</p>
               </button>
             ))}
           </div>
@@ -173,7 +173,7 @@ export default function POS() {
                 <div className="relative">
                   <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                   <Input 
-                    placeholder="Guest Name / Room #" 
+                    placeholder="Guest Name" 
                     className="pl-9 bg-white"
                     value={customerName}
                     onChange={(e) => setCustomerName(e.target.value)}
@@ -190,7 +190,7 @@ export default function POS() {
                   <SelectContent>
                     <SelectItem value="Cash">Cash</SelectItem>
                     <SelectItem value="Card">Card</SelectItem>
-                    <SelectItem value="Room Charge">Room Charge</SelectItem>
+                    <SelectItem value="Room Charge">GPay</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -200,7 +200,7 @@ export default function POS() {
             
             <div className="flex justify-between items-end">
               <span className="text-muted-foreground font-medium">Total</span>
-              <span className="text-3xl font-bold font-display text-primary">${cartTotal.toFixed(2)}</span>
+              <span className="text-3xl font-bold font-display text-primary">{cartTotal.toFixed(2)}</span>
             </div>
 
             <Button 

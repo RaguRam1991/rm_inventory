@@ -137,7 +137,7 @@ export default function Inventory() {
                       <Badge variant="secondary" className="font-normal">{item.category}</Badge>
                     </TableCell>
                     <TableCell className="font-medium text-primary">
-                      ${item.price}
+                      {item.price}
                     </TableCell>
                     <TableCell>
                       <div className="flex items-center gap-2">

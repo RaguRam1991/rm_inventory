@@ -35,7 +35,7 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <StatsCard 
           title="Today's Revenue" 
-          value={`$${todaysRevenue.toFixed(2)}`} 
+          value={`${todaysRevenue.toFixed(2)}`} 
           icon={DollarSign}
           className="border-l-4 border-l-green-500"
         />
@@ -49,7 +49,7 @@ export default function Dashboard() {
         />
         <StatsCard 
           title="Total Inventory Value" 
-          value={`$${totalStockValue.toFixed(0)}`} 
+          value={`${totalStockValue.toFixed(0)}`} 
           icon={Package}
           className="border-l-4 border-l-blue-500"
         />
